@@ -35,6 +35,12 @@ class Exchagerate_APIConn_Daily:
         return self.raw_data
     
     def transform_raw_data(self):
+        '''
+        Transform data from dictionary to dataframe structure 
+
+        :returns: pd.DataFrame()
+        '''
+        
         dfs = []
         for key, value in self.raw_data.items():
             _df = pd.DataFrame(value, columns=("base", "rates", "date")).reset_index().rename(columns = {'index':"currency",
