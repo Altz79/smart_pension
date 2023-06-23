@@ -1,5 +1,5 @@
 # smart_pension
-Test task for DE position
+API connection code:
 
 Current version of code from Exchagerate/exchagerate_api.py can download data for 1 specific day. There is an option to use the same functionality over the Time-Series endpoint, but API Access Key from professional subscription plan will be required (currently used from "Basic").
 
