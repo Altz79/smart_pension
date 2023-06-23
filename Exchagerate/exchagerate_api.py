@@ -12,7 +12,7 @@ class Exchagerate_APIConn_Daily:
     
     def __init__(self, start_date):
         self.start_date = start_date 
-        self._api_key = "ae1881b167435b819e5b54f147701e0b"
+        self._api_key = "api_key"
         self.api_url = 'http://api.exchangeratesapi.io/v1/'
         self.target_url = self.api_url + self.start_date + f'?access_key={self._api_key}'
         self.raw_data = {}
